@@ -1,28 +1,52 @@
 #1o
-my_list=[i**2 for i in range(1,11)]
-f=open("outpuut.txt","w")
-for item in my_list:
-	f.write(str(item)+"\n")
 
-	
-f.close()
-
-#2o
-f=open("new_file.txt")
+f=open("Text_File.txt")
 f.closed
 #false
 f.close()
 f.closed
 #true
 
-#3o
 
-g=open('new_file','w')
+#2o
+
+g=open('Text_File','w')
 g.write('A New file begins')
 g.write('...today!\n')
 g.colse()
 
-#4o
-f=open('input_file.txt')
+
+#3o
+
+f=open('Text_File.txt')
 for line in f:
    print(line)
+
+
+
+#4o
+my_list=[i**2 for i in range(1,11)]
+f=open("Text_File.txt","w")
+for item in my_list:
+	f.write(str(item)+"\n")
+f.close()
+
+
+
+#5o
+f=open('Text_File.txt')
+for line in f:
+   print(line)
+  
+  
+#6
+   logfile=open('test.log','w')
+   logfile.write('test succeded')
+   logfile.close()
+   print file('test.log').read()
+test succeded
+   logfile=open('test.log','a')
+   logfile.write('line 2')
+   logfile.close()
+   print file('test.log').read()
+test succededline 2 
