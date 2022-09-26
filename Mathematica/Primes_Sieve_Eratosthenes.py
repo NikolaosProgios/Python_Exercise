@@ -1,4 +1,5 @@
-﻿def primes_sieve(limit):
+﻿# -*- coding: utf-8 -*-
+def primes_sieve(limit):
 	limitn=limit + 1
 	not_prime=set()
 	primes=[]
